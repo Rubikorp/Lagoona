@@ -1,0 +1,901 @@
+:root {
+  --color-gold-light:#E9C379;
+  --color-gold:#CC9933;
+  --color-gold-high:#A47312;
+}
+
+@font-face {
+  font-family: 'muller';
+  font-style: normal;
+  font-weight: 300;
+  src: local(''),
+    url('/Lagoona/fonts/MullerLight.woff2') format('woff2'), /* Super Modern Browsers */
+    url('/LIONIC/fonts/MullerBold.woff') format('woff');
+}
+
+@font-face {
+  font-family: 'muller';
+  font-style: normal;
+  font-weight: 400;
+  src: local(''),
+    url('/Lagoona/fonts/MullerRegular.woff2') format('woff2'), /* Super Modern Browsers */
+    url('/LIONIC/fonts/MullerRegular.woff') format('woff');
+}
+
+@font-face {
+  font-family: 'muller';
+  font-style: normal;
+  font-weight: 500;
+  src: local(''),
+    url('/Lagoona/fonts/MullerMedium.woff2') format('woff2'), /* Super Modern Browsers */
+    url('/LIONIC/fonts/MullerMedium.woff') format('woff');
+}
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+  min-width: 1200px;
+}
+
+a {
+  text-decoration: none;
+}
+
+ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+img {
+    max-width: 100%;
+}
+
+html {
+    font-family: 'muller', sans-serif;
+}
+
+body {
+  background: #E5E5E5;
+}
+
+.container {
+    max-width: 1200px;
+    margin-right: auto;
+    margin-left: auto;
+    padding-left: 15px;
+    padding-right: 15px;
+    display: block;
+}
+
+.btn {
+  padding: 13px 20px;
+  border-radius: 10px;
+  color: var(--color-gold);
+  border: 1px solid var(--color-gold);
+  background-color: transparent;
+  cursor: pointer;
+  transition-property: background-color, color;
+  transition-duration: .3s;
+  transition-timing-function: ease;
+}
+
+.btn:hover {
+  color: white;
+  background-color: var(--color-gold);
+}
+
+.btn:active {
+  background-color: var(--color-gold-high);
+}
+
+.text-center {
+    text-align: center;
+}
+
+/* header */
+.header {
+    height: 114px;
+}
+
+.header-container {
+    display: flex;
+    align-items: center;
+    height: 100%;
+    justify-content: space-between;
+}
+
+.logo-img {
+    max-width: 261px;
+    max-height: 54px;    
+    margin-left: auto;
+    margin-right: 40px;
+}
+
+.tel-link {
+  font-size: 20px;
+  line-height: 20px;
+  font-weight: 500px;
+  color: #666666;
+  transition: color 0.1s ease;
+}
+
+.tel-link:hover {
+  color: var(--color-gold);
+}
+
+.tel-link:active {
+  color: #E9C379;
+}
+  
+
+.user-cabinet-link {
+  display: flex;
+  align-items: center;
+  font-size: 16px;
+  line-height: 16px;
+  font-weight: 400;
+  color: var(--color-gold);
+  transition-property: color;
+  transition-duration: .1s;
+  transition: color 0.1s ease;
+}
+
+.user-cabinet-link-dscr {
+  margin-left: 7px;
+}
+
+.user-cabinet-link:hover {
+  color: var(--color-gold-high);
+}
+
+.user-cabinet-link:active {
+  color: #E9C379;
+}
+
+.user-cabinet-icon {
+ display: block;
+ transform: translateY(-2px);
+}
+
+.user-cabinet-link path{
+  transition-property: backround-color, color;
+  transition-duration: .1s;
+  transition-timing-function: ease;
+}
+
+.user-cabinet-link:hover path {
+  fill: var(--color-gold-high);
+}
+
+.user-cabinet-link:active path {
+  fill: #E9C379;
+}
+
+/* header-navigation */
+.header-navigation {
+    height: 100%;
+}
+
+.header-nav-container {
+    display: flex;
+    padding: 14px 0px;
+    align-items: center;
+    height: 100%;
+    justify-content: space-between;
+    background-color: white;
+    background-size: contain;
+    border-radius: 15px;
+}
+
+.button-container, .nav-list {
+    display: flex;
+}
+
+.nav-list-item {
+    margin-left: 45px;
+}
+
+.nav-link:hover {
+  color: var(--color-gold);
+}
+
+.nav-link:active {
+  color: #E9C379;
+}
+
+.nav-link {
+  font-size: 16px;
+  line-height: 16px;
+  font-weight: 400;
+  transition: color 0.1s ease;
+  color: #666666;
+}
+
+.nav-link-left {
+    margin-left: 45px;
+}
+
+.button-container {
+  height: 50px;
+  border-left: 1px solid #E1E1E1;
+  align-items: center;
+}
+
+.btn-link {
+    margin-left: 40px;
+}
+
+.right {
+    margin-right: 45px;
+}
+
+/* hero */
+.container-hero {
+  padding-top: 70px;
+  padding-bottom: 70px;
+}
+
+.section-heading {
+  margin-top: 0;
+  margin-left: 40px;
+  margin-bottom: 20px;
+  font-size: 40px;
+  line-height: 40px;
+  font-weight: 400;
+  color: #333333;   
+}
+
+.about-us-dscr {
+  margin-top: 0;
+  margin-bottom: 0;
+  font-size: 16px;
+  line-height: 32px;
+  font-weight: 400;
+  color: #000000;
+}
+
+.section-hero-list {
+    display: flex;
+    flex-direction: column;
+}
+
+.about-link {
+  position: relative;
+}
+
+.section-hero-container-flex {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.section-hero-item {
+  display: flex;
+
+  /* flex-direction: column; */
+  align-content: space-between;
+  flex-wrap: wrap;
+  max-width: 573px;
+  height: 258px;
+  padding: 40px 234px 40px 40px;
+}
+
+.section-hero-item:not(:nth-child(1)) {
+    margin-top: 23px;
+}
+
+.section-hero-big {
+  display: flex;
+  flex-wrap: wrap;
+  align-content: space-between;
+  padding: 211px 234px 41px 40px;
+  max-width: 573px;
+  max-height: 540px;
+
+}
+
+.section-hero-heading {
+  font-size: 40px;
+  line-height: 40px;
+  font-weight: 700;
+  color: #ffffff;
+}
+
+.price {
+  margin-top: 15px;
+  font-size: 20px;
+  line-height: 20px;
+  font-weight: 400;
+  color: #ffffff;
+}
+
+.section-hero-heading-big {
+  font-size: 60px;
+  line-height: 60px;
+  font-weight: 700;
+  color: #ffffff;
+}
+
+.price-big {
+  margin-top: 15px;
+  margin-bottom: 0;
+  font-size: 30px;
+  line-height: 30px;
+  color: #ffffff;
+}
+
+.about-link {
+  padding-right: 16px;
+  background: url(/Lagoona/img/Rectangle.svg) center right no-repeat transparent;
+  background-size: 10px;
+  font-size: 16px;
+  line-height: 16px;
+  font-weight: 400;
+  color: #FFCC66;
+  transition: color 0.1s ease;
+}
+
+.about-link:hover {
+  color: var(--color-gold-high);
+}
+
+.about-link:active {
+  color: var(--color-gold-light);
+}
+
+.section-hero-item-maldiv {
+  background: url(/Lagoona/img/maldiv.png) center center no-repeat transparent;
+  background-size: cover;
+  border-radius: 15px;
+}
+
+.section-hero-item-tur {
+  background: url(/Lagoona/img/tur.png) center center no-repeat transparent;
+  background-size: cover;
+  border-radius: 15px;
+}
+
+.section-hero-big-lux {
+  background: url(/Lagoona/img/lux.png) center center no-repeat transparent;
+  background-size: cover;
+  border-radius: 15px;
+}
+
+/* about-us */
+.about-us-dscr {
+    max-width: 888px;
+}
+
+/* services */
+.container-services {
+    padding-top: 70px;
+    padding-bottom: 70px;
+}
+
+.sevices-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-content: space-between;
+}
+
+.sevices-item {
+  padding: 191px 126px 50px 45px;
+  max-width: 573px;
+  max-height: 330px;
+  border-radius: 15px;
+}
+
+.services-item-exlusive {
+  background: url(/Lagoona/img/exlusive-servicec.png) top no-repeat white;
+  background-size: contain;
+}
+
+.services-item-arenda {
+  background: url(/Lagoona/img/arenda.png) top no-repeat white;
+  background-size: contain;
+}
+
+.services-item-saun {
+  background: url(/Lagoona/img/saun-baseyn.png) top no-repeat white;
+  background-size: contain;
+}
+
+.services-item-sec-park {
+  background: url(/Lagoona/img/security-parking.png) top no-repeat white;
+  background-size: contain;
+}
+
+.srs-item-link {
+  padding-right: 18px;
+  background: url(/Lagoona/img/Rectangle.svg) top right no-repeat transparent;
+  background-size: 10px;
+  font-size: 20px;
+  line-height: 40px;
+  font-weight: 500;
+  color: var(--color-gold);
+  transition: color .1s ease;
+}
+
+.srs-item-link:hover,
+.contacts-link:hover {
+  color: var(--color-gold-high);
+}
+
+.srs-item-link:active,
+.contacts-link:active {
+  color: #E9C379;
+}
+
+.srs-dcr {
+  margin-top: 0;
+  margin-bottom: 0;
+  font-size: 16px;
+  line-height: 32px;
+  font-weight: 400;
+}
+
+.sevices-item-top {
+  margin-top: 23px;
+}
+
+/* benefits */
+.container-bnf {
+  padding-bottom: 70px;
+}
+
+.benefits-list {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.bnf-item {
+  flex-direction: column;
+  padding: 45px 42px 41px 40px;
+  max-width: 275px;
+  background: white;
+  border-radius: 15px;
+}
+
+.bnf-item:not(:nth-child(4n)) {
+  margin-right: 23px;
+}
+
+.bnf-item-top {
+  margin-top: 23px;
+}
+
+.icon-bnf {
+  display: inline-block;
+  margin-bottom: 10px;
+}
+
+.icon-bnf-bathtub {
+  width: 64px;
+  height: 66px;
+  background: url(/Lagoona/img/bathtub.svg) top left no-repeat;
+}
+
+.icon-bnf-hanger {
+  width: 67px;
+  height: 66px;
+  background: url(/Lagoona/img/hanger.svg) top left no-repeat;
+}
+
+.icon-bnf-heating {
+  width: 64px;
+  height: 66px;
+  background: url(/Lagoona/img/heating.svg) top left no-repeat;
+}
+
+.icon-bnf-hotel-key {
+  width: 66px;
+  height: 66px;
+  background: url(/Lagoona/img/hotel-key.svg) top left no-repeat;
+}
+
+.icon-bnf-parking {
+  width: 66px;
+  height: 66px;
+  background: url(/Lagoona/img/parking.svg) top left no-repeat;
+}
+
+.icon-bnf-reception {
+  width: 64px;
+  height: 66px;
+  background: url(/Lagoona/img/reception.svg) top left no-repeat;
+}
+
+.icon-bnf-security-box {
+  width: 67px;
+  height: 66px;
+  background: url(/Lagoona/img/security-box.svg) top left no-repeat;
+}
+
+.icon-bnf-swimming-pool {
+  width: 64px;
+  height: 66px;
+  background: url(/Lagoona/img/swimming-pool.svg) top left no-repeat;
+}
+
+/* Placements */
+.section-placements {
+  margin-bottom: 70px;
+}
+
+.section-placements__heading {
+  margin-bottom: 30px;
+}
+
+.section-placements__parent {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.section-placements__child {
+  display: flex;
+  flex-direction: column;
+  min-width: 374px;
+  min-height: 440px;
+  padding: 253px 46px 41px 45px;
+  background: white;
+  border-radius: 15px;
+}
+
+.section-placements__bg_espanola {
+  background: url(/Lagoona/img/Img-placement/espanola.jpg) center top no-repeat white;
+  background-size: contain;
+}
+
+.section-placements__bg_tropical {
+  background: url(/Lagoona/img/Img-placement/tropical.jpg) center top no-repeat white;
+  background-size: contain;
+}
+
+.section-placements__bg_guera {
+  background: url(/Lagoona/img/Img-placement/guera.jpg) center top no-repeat white;
+  background-size: contain;
+}
+
+.section-placements__bg_piadosa {
+  background: url(/Lagoona/img/Img-placement/piadosa.jpg) center top no-repeat white;
+  background-size: contain;
+}
+
+.section-placements__bg_creativ {
+  background: url(/Lagoona/img/Img-placement/creatividad.jpg) center top no-repeat white;
+  background-size: contain;
+}
+
+.section-placements__bg_retorno {
+  background: url(/Lagoona/img/Img-placement/retorno.jpg) center top no-repeat white;
+  background-size: contain;
+}
+
+.section-placements__bg_piadosa2 {
+  background: url(/Lagoona/img/Img-placement/piadosa_2.jpg) center top no-repeat white;
+  background-size: contain;
+}
+
+.section-placements__bg_siempre {
+  background: url(/Lagoona/img/Img-placement/siempre.jpg) center top no-repeat white;
+  background-size: contain;
+}
+
+.section-placements__child:not(:nth-last-child(3n)){
+  margin-left: 23px;
+}
+
+.section-placements__top {
+  margin-top: 23px;
+}
+
+.section-placements__item_text,
+.section-placement__item_country,
+.section-placement__item_name
+  {
+  margin-top: auto;
+  margin-bottom: 16px;
+  font-size: 16px;
+  line-height: 16px;
+  font-weight: 400;
+  color: #000000;
+}
+
+.section-placement__item_light {
+  color: #999;
+}
+
+.section-placements__item_price {
+  font-size: 20px;
+  line-height: 20px;
+  font-weight: 700;
+  color:#000000;
+}
+
+.section-placement__item_country {
+  margin-bottom: 20px;
+  color: #999;
+}
+
+.section-placements__child_content {
+  align-items: center;
+  justify-content: end;
+  position: relative;
+  background: url(/Lagoona/img/Img-placement/placement-link.jpg) center center no-repeat;
+  background-size: contain;
+  transition: transform 0.2s ease;
+}
+
+.section-placements__child_content:hover {
+  transform: scale(1.03);
+}
+
+.section-placements__child_content:active {
+  transform: scale(1.01);
+}
+
+.section-placements__child_link {
+  text-decoration: none;
+  padding-right: 16px;
+  font-size: 20px;
+  line-height: 1;
+  font-weight: 500;
+  color: white;
+  background: url(/Lagoona/img/Img-placement/Rectangle\ 2.svg) center right no-repeat transparent;
+}
+
+.section-placements__child_link:before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  }
+
+/* form */
+.bg-container-form {
+  padding: 38px 45px 71px 45px;
+  background: #DBDBDB;
+  border-radius: 15px;
+}
+
+.tittle-form {
+  margin-top: 0px;
+  margin-bottom: 19px;
+  transform: translateX(-5px);
+  font-size: 40px;
+  line-height: 40px;
+  font-weight: 400;
+  color: black;
+}
+
+.head-input {
+  margin-top: 0px;
+  margin-bottom: 15px;
+  font-size: 12px;
+  line-height: 12px;
+  font-weight: 400;
+  color: #000000;
+}
+
+.form{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 31px 28px 32px 28px;
+  background: white;
+  border-radius: 15px;
+}
+
+.content-form {
+  display: flex;
+  flex-direction: column;
+  padding-right: 20px;
+  border-right: 1px solid #E1E1E1;
+}
+
+.input:active, :hover, :focus {
+  outline: 0;
+  outline-offset: 0;
+}
+
+.input {
+  padding: 0px;
+  width: 169px;
+  font-size: 16px;
+  line-height: 16px;
+  font-weight: 400;
+  border: none;
+  color: #000000;
+  transition-property: color, transform;
+  transition-duration: 0.3s;
+  transition-timing-function: ease;
+  cursor: pointer;
+  /* transition: border-bottom 0.3s ease; */
+}
+
+.input:hover {
+  color: var(--color-gold);
+  transform: scale(1.05);
+}
+
+input:hover::placeholder {
+  color: var(--color-gold);
+}
+
+.input:active {
+  color: var(--color-gold);
+}
+
+.number-input {
+ width: 121px;
+ border: none;
+ border-bottom: 1px solid #cccccc;
+}
+
+.input-date {
+  text-align: left center;
+  max-width: 135px;
+  font-size: 16px;
+  line-height: 16px;
+  font-weight: 400;
+  border: none;
+}
+
+.input-date::-webkit-calendar-picker-indicator {
+  width: 14px;
+  height: 15px;
+}
+
+.btn-submit-contain {
+  padding-left: 20px;
+}
+
+.btn-submit {
+  padding: 13px 30px 13px 30px;
+}
+
+.select {
+  border: transparent;
+  position: relative;
+}
+
+.input-check {
+  width: 169px;
+}
+
+/* contacts */
+.section-contacts-heading-top {
+  margin-top: 70px;
+}
+
+.contacts-container {
+  display: flex;
+  justify-content: space-between;
+}
+
+.contacts-container {
+  padding: 44px 44px 46px 46px;
+  background:white;
+  border-radius: 15px;
+}
+
+.contacts-list {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding-right: 51px;
+}
+
+.contacts-item {
+  display: flex;
+  padding-top: 25px;
+  padding-bottom: 23px;
+  border-bottom: 1px solid #C4C4C4;
+}
+
+.contacts-head {
+  width: 145px;
+  font-size: 20px;
+  line-height: 20px;
+  font-weight: 700;
+}
+.contacts-link {
+  font-size: 16px;
+  line-height: 24px;
+  font-weight: 400;
+  color: var(--color-gold);
+  transition: color .1s ease;
+}
+
+.contacts-dscr {
+  margin: 0;
+  max-width: 229px;
+  font-size: 16px;
+  line-height: 24px;
+  font-weight: 400;
+}
+
+.btn-contacts {
+  margin-top: 45px;
+  padding: 27px 29px;
+}
+
+.contacts-img {
+  border-radius: 15px;
+}
+
+/* footer */
+.footer-container-bg {
+  display: flex;
+  margin-top: 19px;
+  padding: 51px 51px 46px 52px;
+  background: url(/Lagoona/img/footer-bg.jpg) center bottom no-repeat transparent;
+  background-size: cover;
+  border-radius: 15px;
+}
+
+.footer-list-center {
+  width: 358px;
+}
+
+.footer-list-left {
+  width: 320px;
+  margin-right: 102px;
+}
+
+.footer-list-right {
+  margin-left: auto;
+}
+
+.footer-item:not(:nth-child(1)) {
+  margin-top: 49px;
+}
+
+.footer-item-center:not(:nth-child(1)) {
+  margin-top: 15px;
+}
+
+.footer-item-dscr {
+  appearance: none;
+  margin: 0;
+  font-style: normal;
+  font-size: 16px;
+  line-height: 30.4px;
+  font-weight: 400;
+  color: #ffffff;
+}
+
+.social-footer-link {
+  display: block;
+  width: 25px;
+  height: 25px;
+}
+
+.footer-social-item:not(:nth-child(1)) {
+  margin-top: 20px;
+}
+
+.footer-list-right {
+  display: flex;
+  flex-direction: column;
+}
+
+.footer-social-icon path {
+  transition-property: backround-color, color;
+  transition-duration: .1s;
+  transition-timing-function: ease;
+}
+
+.social-footer-link:hover .footer-social-icon path {
+  fill: var(--color-gold-high);
+}
+
+.social-footer-link:active .footer-social-icon path {
+  fill: var(--color-gold);
+}
